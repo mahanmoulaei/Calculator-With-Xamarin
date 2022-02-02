@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.Buttons">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="DimGray">
+
+            <Button Text="Button Default" x:Name="buttonTest"></Button>
+            <Button Text="Button Border" BorderWidth="3" BorderColor="Red" x:Name="buttonBorder" Clicked="buttonBorder_Clicked"/>
+
+            <Button Text="Button Border" BorderWidth="3" BorderColor="Orange" BorderRadius="20"></Button>
+            <Button Text="Button Border" BorderWidth="3" BorderColor="Blue" BorderRadius="20" BackgroundColor="OrangeRed"></Button>
+
+            <Label Text="Test Event Label" TextColor="White" x:Name="labelTest"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
