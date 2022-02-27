@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.CalculatorPage2">
+    <ContentPage.Content>
+        <Grid BackgroundColor="Black" RowSpacing="1.5" ColumnSpacing="1.5" Padding="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <!--Display/Result Row-->
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Text="0" TextColor="White" HorizontalTextAlignment="End" VerticalTextAlignment="Center" FontSize="40" x:Name="lblResult"/>
+            
+            <!--First Row-->
+            <Button Text="7" FontSize="35" Grid.Row="1" Grid.Column="0" BackgroundColor="White" Clicked="onCLickNumber"></Button>
+
+            <Button Text="8" FontSize="35" Grid.Row="1" Grid.Column="1" BackgroundColor="White" Clicked="onCLickNumber"></Button>
+
+            <Button Text="9" FontSize="35" Grid.Row="1" Grid.Column="2" BackgroundColor="White" Clicked="onCLickNumber"></Button>
+
+            <Button Text="÷" FontSize="35" Grid.Row="1" Grid.Column="3" BackgroundColor="Orange" TextColor="White"  Clicked="onCLickOperation"></Button>
+
+            <!--Second Row-->
+            <Button Text="4" FontSize="35" Grid.Row="2" Grid.Column="0" BackgroundColor="White" Clicked="onCLickNumber"></Button>
+
+            <Button Text="5" FontSize="35" Grid.Row="2" Grid.Column="1" BackgroundColor="White" Clicked="onCLickNumber"></Button>
+
+            <Button Text="6" FontSize="35" Grid.Row="2" Grid.Column="2" BackgroundColor="White" Clicked="onCLickNumber"></Button>
+
+            <Button Text="×" FontSize="35" Grid.Row="2" Grid.Column="3" BackgroundColor="Orange" TextColor="White"  Clicked="onCLickOperation"></Button>
+
+            <!--Third Row-->
+            <Button Text="1" FontSize="35" Grid.Row="3" Grid.Column="0" BackgroundColor="White" Clicked="onCLickNumber"></Button>
+
+            <Button Text="2" FontSize="35" Grid.Row="3" Grid.Column="1" BackgroundColor="White" Clicked="onCLickNumber"></Button>
+
+            <Button Text="3" FontSize="35" Grid.Row="3" Grid.Column="2" BackgroundColor="White" Clicked="onCLickNumber"></Button>
+
+            <Button Text="-" FontSize="35" Grid.Row="3" Grid.Column="3" BackgroundColor="Orange" TextColor="White"  Clicked="onCLickOperation"></Button>
+
+            <!--Fourth Row-->
+            <Button Text="0" FontSize="35" Grid.Row="4" Grid.ColumnSpan="3" BackgroundColor="White" Clicked="onCLickNumber"/>
+
+            <Button Text="+" FontSize="35" Grid.Row="4" Grid.Column="3" BackgroundColor="Orange" TextColor="White"  Clicked="onCLickOperation"/>
+
+            <!--Fifth Row-->
+            <Button Text="C" FontSize="35" Grid.Row="5" Grid.Column="0" BackgroundColor="Gray" Clicked="onCLickClear"/>
+
+            <Button Text="=" FontSize="35" Grid.Row="5" Grid.Column="1"  Grid.ColumnSpan="3" BackgroundColor="Orange" TextColor="White"  Clicked="onCLickEqual"/>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

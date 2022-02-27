@@ -12,6 +12,11 @@
 
   <ItemGroup>
     <Compile Remove="CalculatorPage2.cs" />
+    <Compile Remove="CalculatorPage2.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="CalculatorPage2.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,9 +32,6 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="CalculatorPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="CalculatorPage2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

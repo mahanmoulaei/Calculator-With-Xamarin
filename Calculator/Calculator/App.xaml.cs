@@ -12,7 +12,8 @@ namespace Calculator
 
             //MainPage = new MainPage();
             //MainPage = new CalculatorPage();
-            MainPage = new Buttons();
+            MainPage = new CalculatorPage2();
+            //MainPage = new Buttons();
         }
 
         protected override void OnStart()
